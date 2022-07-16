@@ -1,0 +1,315 @@
+git clone -b branchname url
+
+ec2swathi rudrala21:17
+	sxf-oaox-yrj
+
+        esg-wsxd-sgr
+1. touch filename
+2. mkdir dirname 
+3. cd  ...change dir
+4. cd ..
+5. ls
+6. ls -la
+7. ls -lrt
+8. date
+9. cal 
+10. cal 2000
+11. clear 
+12. pwd su..... present working 
+
+directory
+/home/ec2-user
+f
+13. vi filename
+    shift+i    ---->insert modect 
+   type here --
+  press esc 
+   :wqsudo
+14. cat filename
+15. sudo -i ---->> switch user do
+15. [ec2-user@ip-172-31-95-137 ~]$ sudo -i
+[root@ipls-172-31-95-137 ~]# cd ..
+[root@ip-172-31-95-137 /]#
+
+16. [root@ip-172-31-95-137 /]#
+17. cp source destination
+18. sudo cp fcisudole1 /
+19. mv source destination
+20. exit
+21. mv file2 /root
+22. history
+23. df -h
+24. winscp ----
+25. yum ---->>>> installation
+26. useradd username
+27. cd /etc .... cat passwd -------->>>> cat /etc/passwd
+28.cat etc/os-release
+
+
+
+ls
+
+mobaxterm
+swathi rudrala20:23
+ubuntu -----ubuntu
+centos ----centos
+amazon linux ---ec2-user
+swathi rudrala21:34
+1. useradd username
+2. passwd username
+3. vi /etc/ssh/sshd_config
+    passwordAuthentication  yes
+4. systemctl restrart sshd
+5. visudo
+   swathi ALL=(ALL) ALL
+
+6. cat /etc/passwd
+7. cat /etc/shadow
+8. cat /etc/os-release
+9. rm filename   
+10. rmdir dirname
+11. rm -rf file/dirname
+12. puttygen 
+swathi rudrala21:49
+13. which bash
+bin/bash
+usr/bin/bash
+
+
+
+
+
+swathi rudrala21:06
+ aws s3 mb s3://sample123ydfgcfjvgb
+aws s3 ls
+
+aws s3 rb s3://bucketname
+
+aws s3 rm s3://sample123ydfgcfjvgb --recursive
+
+aws s3 cp filename s3://bucketname
+
+aws s3 mv filename s3://bucketname
+
+
+aws s3 rm s3://bucketname/objectnam
+
+aws s3 sync .  s3:/bucketname
+
+
+chmod 777 filename
+d ---- directory
+r---- read --- 4
+
+w-----write --- 2
+x-----execute --- 1
+
+chmod 500
+
+7 = -4
+shellscript.sh
+./filename
+sh filename
+swathi rudrala16:46
+s3 ---url
+multiple account config
+chmod
+shell
+
+
+1. git 
+2. github
+3. bitbucket 
+
+1. git init 
+2. touch filename
+3. git add
+4. git commit
+5. git config --global --list
+6. git config --global user.name "name"
+7. git config --global user.email "swathi@gmail.com"
+8. git status
+10. git log 
+
+1. git init 
+2. touch filename
+3. git add filename / . or * or A
+4. git commit -m "msg"
+5. git config --list
+6. git config --global user.name "name"
+7. git config --global user.email "swathi@gmail.com"
+8. git status
+ 
+
+
+
+
+
+ git reset --merge
+
+problem =(main|REVERTING)
+solution=git revert --quit
+
+swathi rudrala21:13
+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
+swathi rudrala21:56
+yum install  git
+apt-get install git
+swathi rudrala21:58
+settings------developer settings------ access key ------ click on generate key------ select all options------- click on generate key
+go to perticular repository ----- settings----- collabators-----add people
+cat filename |  grep word
+swathi rudrala21:59
+linux  ----case sensitive --- treat as both small and captal letters differently
+cat filename | grep -i word
+cat filename | grep -v word 
+sed ,grep
+swathi rudrala22:01
+grep ----- global regular expressions 
+difference between find , grep
+find and sed
+find , sed, grep
+sed ----- stream editor
+swathi rudrala22:02
+vi -----editor   ///////////////  nano editor
+sxf-oaox-yrj
+
+
+find /root -empty -type f -delete
+swathi rudrala13:00
+find path -name filename/dirname/username
+grep word /etc/passwd
+sed "s/searchword/replacewith/g" filename
+swathi rudrala13:01
+sed "s/searchword/replacewith/g" filename >> backup_filename
+
+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
+
+
+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
+rajamohan reddy061016:06
+/usr/bin/xauth:  file /home/ubuntu/.Xauthority does not exist
+ubuntu@ip-172-31-86-40:~$ ^C
+rajamohan reddy061016:45
+https://github.com/rajabujji/drmr.git
+rajamohan reddy061016:57
+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
+You17:16
+https://github.com/hanumanthu6123/new12.git
+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
+NARENDRA BUKKISETTY17:50
+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
+NARENDRA BUKKISETTY17:52
+https://github.com/Narendra402/bnr.git
+
+swathi rudrala21:27
+useradd username
+passwd username
+useradd -u 1025 username
+500 -60000
+usermod -l new-name old-name
+swathi rudrala21:29
+groupadd group-name
+userdel -r  username
+groupmod -n new-name old-name
+swathi rudrala21:30
+gpasswd -a username group-name
+gpasswd -M user1,user2.....   groupname
+gpasswd -d username groupname
+swathi rudrala21:31
+groupadd -g 2398 groupname
+sxf-oaox-yrj
+GKQaCV4VVWxh5W1CfJ9FYAMmkncgpusLMLTZmEJerR3H
+
+ANSIBLE ------- configuration management tool
+swathi rudrala21:52
+playbooks ...... script..... yaml script --
+
+git,github,aws,linux, 
+swathi rudrala21:55
+aws ....ec2,s3,IAM,elasticIP, EBS 
+ANSIBLE ----
+swathi rudrala21:57
+bitbucket , gitlab ,
+maven 
+swathi rudrala21:59
+jenkins
+docker
+kubernetes
+kibana
+grafana
+promotheous
+portainer
+mysql ,
+mariadb
+postgres
+dbeaver
+
+terraform ......
+swathi rudrala22:03
+powershell ----- aws configure ........winscp , kubernates dashboard .
+
+nginx ---webserver
+tomcat
+apache
+
+DNS service
+swathi rudrala22:11
+GoDaddy ---webservice ....cname ,
+
+gitlab ---- domain name --
+mailx ------ 
+sxf-oaox-yrj
+
+swathi rudrala20:10
+Hanumanth..... Server start cheyava
+rajamohan reddy061020:22
+listening bheta
+swathi rudrala20:32
+softlink ..........hardlink
+swathi rudrala20:53
+ANSIBLE ......... configuration management tool 
+python 
+yaml script 
+swathi rudrala20:55
+chef ,puppet 
+swathi rudrala21:01
+sudo amazon-linux-extras install epel
+swathi rudrala21:07
+yum install git python python-devel python-pip openssl ansible
+swathi rudrala21:08
+ansible --version
+swathi rudrala21:47
+vi /etc/ansible/ansible.config
+
+git config --global list
+git config --global --unset alias.li
+swathi rudrala21:59
+git config --global alias.s "status"
+
+users creation in both master and nodes
+master ==> ssh-keygen ==> 
+ssh-copy-id username@ip
+swathi rudrala21:51
+ansible ALL=(ALL)    NOPASSWD: ALL
+
+swathi rudrala23:04
+vi hosts
+ip        ansible_ssh_user=username  ansible_ssh_pass=passwd
+swathi rudrala23:05
+ansible ip/groupname -m ping
+swathi rudrala23:07
+[groupname]
+vi hosts
+ip        ansible_ssh_user=username  ansible_ssh_pass=passwd
+ansible groupname -b -a "   "
+useradd username
+sxf-oaox-yrj
+
+
+nginx
+security group
+vpc
+bastion -ip , rdp ,windows , users, passwd, 
+swathi rudrala23:22
+private servers , public servers 

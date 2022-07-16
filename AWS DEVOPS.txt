@@ -1,0 +1,269 @@
+1. touch filename
+2. mkdir dirname 
+3. cd  ...change dir
+4. cd ..  -->go to administrater
+5. ls -->show list of files
+6. ls -la  -->show list of files with dates and timmings
+7. ls -lrt
+8. date  -->present date 
+9. cal -->show calender
+10. cal 2000  -->show 2000 calender
+11. clear -->clear all
+12. pwd --> present working directry 
+
+directory
+/home/ec2-user
+
+13. vi filename
+    shift+i    ---->insert mode
+   type here --
+  press esc 
+   :wq  -->save and quit
+14. cat filename -->show content in a file
+15. sudo -i ---->> switch user do
+15. [ec2-user@ip-172-31-95-137 ~]$ sudo -i
+[root@ip-172-31-95-137 ~]# cd ..
+[root@ip-172-31-95-137 /]#
+
+16. [root@ip-172-31-95-137 /]#
+17. cp source destination
+18. sudo cp file1 /
+19. mv source destination
+20. exit
+21. mv file2 /root
+22. history
+23. df -h
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "S3:GetObject",
+            "Resource": "arn:aws:s3:::hanumas4/*"
+        }
+    ]
+}
+------
+1. useradd username
+2. passwd username
+3. vi /etc/ssh/sshd_config
+    passwordAuthentication  yes
+4. systemctl restart sshd
+5. visudo
+   swathi ALL=(ALL) ALL
+
+6. cat /etc/passwd
+7. cat /etc/shadow
+8. cat /etc/os-release
+9. rm filename   
+10. rmdir dirname
+11. rm -rf file/dirname
+12. puttygen 
+13. which bash
+bin/bash
+usr/bin/bash
+----
+
+aws congfigure
+1  ls
+    2  aws --version --cli version
+    3  aws s3 ls --display buckets in s3
+    4  aws configure
+    5  aws s3 ls
+    6  aws configure
+    7  clear
+    8  aws --version
+    9  aws s3 ls
+   10  aws configure
+   11  aws ec2 --start-instances --instance-ids i-081d69e8edde490b8 --start instances with ids 
+   12  clear
+   13  aws ec2 start-instances --instance-ids i-081d69e8edde490b8
+   14  clear
+   15  aws ec2 start-instances --instance-ids i-0a15f9ecbb2651407 i-0e3e9ecb7de38836c
+   16  clear
+   17  aws configure --profile gopi
+   18  history
+   19  clear
+----------
+  20  aws ec2 start-instances --instance-ids i-0163a786ebe70ec03
+   21  aws ec2 start-instances --instance-ids i-0163a786ebe70ec03 --profile gopi
+   22  aws configure --profile kidoz
+   23  clear
+   24  aws s3 ls --profile gopi
+   25  aws s3 mb s3://powerstar132458trshgc --profile gopi
+   26  aws s3 ls --profile gopi
+   27  aws s3 mb s3://srn --profile gopi
+   28  aws s3 mb s3://hanumana --profile gopi
+   29  aws s3 mb s3://swathi --profile gopi
+   30  aws s3 mb s3://omkar --profile gopi
+   31  aws s3 rm s3://omkar --profile narendra --all files remove bucket
+   32  aws s3 sync . s3://omkar --profile narendra --files upload in omkar bucket
+   33  aws s3 rb s3://omkar ---profile narendra
+   34  aws s3 cp hanuma s3://omkar ---profile narendra --file copy to bucket
+   35  history >> hanuma ---history have upload to hanuma
+   36  aws s3 rb s3://omkar --recursive  --remove bucket
+-------
+chmod 777 filename
+d ---- directory
+r---- read --- 4
+
+w-----write --- 2
+x-----execute --- 1
+
+chmod 500
+
+7 = -4
+shellscript.sh
+/_--today 02/07/2022class
+s3 ---url
+multiple account config
+chmod
+shell
+----------
+1. git 
+2. github
+3. bitbucket 
+
+1. git config 
+2. touch filename
+3. git add filename
+4. git commit -m "msg"
+5. git config --list --->show user available are not
+6. git config --global user.name "name"
+7. git config --global user.email "swathi@gmail.com"
+8. git status -->check where in repository
+10. git log 
+-------
+git status
+  585  git add .
+  586  git commit -m " added second line"
+  587  git log
+  588  git show b56fac47
+  589  git log -2
+  590  git log -1
+  591  git log -3
+  592  git log --oneline
+  593  git log
+  594  git log --oneline
+  595  git log --oneline -2
+  596  git log --author=swathiR
+  597  git log --author=swathiR --oneline
+  598  git log --author=swathiR --oneline -2
+  599  git log
+  600  git log --since=2022-07-06
+  601  git log --since=2022-06-06  --before=2022-06-30
+  602  git log --sin
+git branch
+git branch branchname
+---------
+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
+swathi rudrala9:56 PM
+yum install  git
+apt-get install git
+swathi rudrala9:58 PM
+settings------developer settings------ access key ------ click on generate key------ select all options------- click on generate key
+go to perticular repository ----- settings----- collabators-----add people
+cat filename |  grep word
+swathi rudrala9:59 PM
+linux  ----case sensitive --- treat as both small and captal letters differently
+cat filename | grep -i word
+cat filename | grep -v word 
+sed ,grep
+swathi rudrala10:01 PM
+grep ----- global regular expressions 
+difference between find , grep
+find and sed
+find , sed, grep
+sed ----- stream editor
+swathi rudrala10:02 PM
+vi -----editor   ///////////////  nano editor
+sxf-oaox-yrj
+------
+sed 's/software/it//g' swathi123 -->replace software as it in swathi123 files
+sed 's/software/it/g' swathi123 >> swathi123-bkpfile -->replace and saved
+grep hanumanth/etc/passwd -->find the user in one line
+find  /etc -name os-release -->os release file have or not in etc
+find  /root -name swathi -->swathi file have or not in root
+find  /root -empty -type f -delete -->delete empty files 
+find  /root -empty -type d -delete -->delete empty directries
+find path -name filename/dirname/username
+grep word /etc/passwd
+sed "s/searchword/replacewith/g" filename
+swathi rudrala1:01 PM
+sed "s/searchword/replacewith/g" filename >> backup_filename
+cat new-output -->new search output
+cat >> swathi123 -->write a content in file
+find /home/ec2-user -name file1 -->how many file1s in ec2 user 
+-----
+ebs:elastic block storage
+lsblk -->show volume information
+df -h 
+aws ---- ec2--- storage increase
+go to putty session ------ df -h 
+swathi rudrala4:05 PM
+lsblk ----- volume information
+swathi rudrala4:06 PM
+growpart /dev/xvda 1
+cat /etc/fstab
+xfs_growfs -d / 
+-------------
+free -h -->show ram space
+yum list installed -->already installed
+usermod -l mouni swathi -->change username
+cat /etc/passwd -->show username in etc
+userdel -r mouni  -->delete username       
+useradd -u 1024 hanumanth -->create user with id  and username
+useradd -g 1024 hanumanth --->create group with id and groupname
+cat /etc/group -->show users in group
+groupadd devops  -->create group
+gpasswd -M swathi,hanumath group1 -->add multiple user in a group
+gpassword -d username groupname  -->delete usernam in group
+groupdel newgroup -->delete group
+useradd username
+passwd username
+useradd -u 1025 username
+500 -60000
+usermod -l new-name old-name -->rename as new name
+groupmod -n newgroup oldgroup -->rename as new group
+swathi rudrala9:29 PM
+groupadd group-name  -->create groupname
+userdel -r  username  -->delete username
+groupmod -n new-name old-name -->group name change new to oldname
+swathi rudrala9:30 PM
+gpasswd -a username group-name
+gpasswd -M user1,user2.....   groupname
+gpasswd -d username groupname
+swathi rudrala9:31 PM
+groupadd -g 2398 groupname
+tail -12 /etc/group  ---> last 12 lines show in group
+head -4 /etc/group -->firtst 4 lines show in group
+tail -2 file1 -->firtst 2 lines show in file1
+nano file1  -->editor
+free -h -->show memory space
+--
+ANSIBLE ------- configuration management tool
+   jenkins
+docker
+kubernetes
+kibana
+grafana
+promotheous
+portainer
+mysql ,
+mariadb
+postgres
+dbeaver
+terraform ......
+swathi rudrala10:03 PM
+powershell ----- aws configure ........winscp , kubernates dashboard 
+nginx ---webserver
+tomcat
+apache
+-----------ansible----------
+sudo amazon-linux-extras install epel
+yum install git python python-devel python-pip openssl ansible
+git config --global list
+git config --global --unset alias.s "status"  -->give s open as status not open
+git config --global alias.s "status"  -->give s open as status
